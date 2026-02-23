@@ -271,7 +271,7 @@ p {
 }
 
 hr {
-    width: 100%;
+    width: 95%;
     height: 2px;
     background: var(--hr);
     border: none;
