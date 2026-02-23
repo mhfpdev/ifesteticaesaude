@@ -2,6 +2,7 @@ const burger = document.getElementById("burgerBtn");
 const menu = document.querySelector(".burger-area");
 const closeBtn = document.getElementById("closeBtn");
 const overlay = document.getElementById("close-overlay");
+const links = document.querySelectorAll(".burger-area a");
 
 burger.addEventListener("click", () => {
   menu.classList.add("open");
@@ -10,6 +11,10 @@ burger.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", closeMenu);
 overlay.addEventListener("click", closeMenu);
+
+links.forEach(link => {
+    link.addEventListener("click", closeMenu);
+});
 
 function closeMenu() {
   menu.classList.remove("open");

@@ -53,7 +53,6 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     color: var(--text-main);
-    overflow-x: hidden;
 }
 
 header {
@@ -110,32 +109,33 @@ header {
     font-size: 20px;
 }
 
-.floating-whatsapp .fa-whatsapp{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background: var(--whatsapp-button);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  box-shadow: var(--shadow-lg);
-  cursor: pointer;
-  z-index: 9999;
-  font-size: 30px;
-  transition: 0.2s ease;
+.floating-whatsapp a {
+    position: fixed;
+    text-decoration: none;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp-button);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 30px;
+    transition: 0.2s ease;
 }
 
-.floating-whatsapp .fa-whatsapp:hover {
+.floating-whatsapp a:hover {
     background-color: var(--whatsapp-hover);
     transform: translateY(-4px);
 }
 
-.floating-whatsapp .fa-whatsapp:active {
+.floating-whatsapp a:active {
     transform: scale(0.97);
 }
 
@@ -253,13 +253,11 @@ p {
 .professional-headshot {
     display: flex;
     background: var(--linear-gradient-primary-light);
-    width: 30%;
+    flex: 0 0 320px;
+    margin: 20px auto;
     height: auto;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
-    margin: 20px;
-    margin-left: 10%;
-    margin-right: 13%;
     align-items: center;
     overflow: hidden;
 }
@@ -270,7 +268,7 @@ p {
 }
 
 hr {
-    width: 100%;
+    width: 95%;
     height: 2px;
     background: var(--hr);
     border: none;
@@ -439,62 +437,6 @@ blockquote {
         transition: 0.2s ease;
     }
 
-    .hero {
-        padding: 30px;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-left {
-        width: 50%;
-    }
-
-    .hero-left h2 {
-        font-size: 42px;
-    }
-
-    .professional-headshot {
-        width: 35%;
-        margin: 0 5%;
-    }
-
-    .professional-headshot img {
-        width: 100%;
-    }
-}
-
-@media (max-width: 659px) {
-
-    .ico {
-        width: 59px;
-        height: 59px;
-    }
-
-    .logo h1 {
-        font-size: 1.4rem;
-    }
-
-    .logo p {
-        font-size: 1.1rem;
-    }
-
-    .burger {
-        font-size: 20px;
-        display: block;
-        position: absolute;
-        right: 20px;
-        border: 1px solid var(--primary-dark);
-        margin-left: 180px;
-        padding: 7px;
-        background-color: var(--primary-light);
-        color: var(--white);
-        border-radius: 5px;
-        font-weight: 1000;
-        box-shadow: var(--shadow-lg);
-        transition: 0.2s ease;
-    }
-
     .burger:active {
         transform: scale(0.97) translateY(-4px);
         background-color: var(--primary);
@@ -520,10 +462,6 @@ blockquote {
 
     .burger-area.open {
         right: -20px;
-    }
-
-    .header-right {
-        display: none;
     }
 
     .close {
@@ -575,8 +513,10 @@ blockquote {
         font-size: 20px;
     }
 
-    .whatsapp-button .fa-whatsapp {
-        font-size: 20px;
+    .whatsapp-button {
+        font-size: 19px;
+        padding: 12px 20px;
+        margin: 5px 0;
     }
 
     .whatsapp-button:hover {
@@ -589,12 +529,12 @@ blockquote {
         transform: translateY(-3px);
     }
 
-    .floating-whatsapp .fa-whatsapp:hover {
+    .floating-whatsapp a:hover {
         background-color: var(--whatsapp-button);
         transform: none;
     }
 
-    .floating-whatsapp .fa-whatsapp:active {
+    .floating-whatsapp a:active {
         background-color: var(--whatsapp-hover);
         transform: translateY(-4px);
     }
@@ -622,7 +562,45 @@ blockquote {
         transform: translateY(-3px);
     }
 
-    /* --- FIM MOBILE --- */
+    .hero {
+        padding: 30px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-left {
+        width: 50%;
+    }
+
+    .hero-left h2 {
+        font-size: 42px;
+    }
+
+    .professional-headshot {
+        width: 35%;
+        margin: 0 5%;
+    }
+
+    .professional-headshot img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 659px) {
+
+    .ico {
+        width: 59px;
+        height: 59px;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .logo p {
+        font-size: 1.1rem;
+    }
 
     .hero {
         padding: 20px;
@@ -656,6 +634,12 @@ blockquote {
         color: rgb(249, 249, 249);
         text-shadow: var(--shadow-text);
         margin: 10px 0;
+    }
+
+    .whatsapp-button {
+        font-size: 19px;
+        padding: 12px 20px;
+        margin: 5px 0;
     }
 
     .professional-headshot {
@@ -717,13 +701,7 @@ blockquote {
         padding-bottom: 20px;
     }
 
-    .whatsapp-button {
-        font-size: 16px;
-        padding: 8px 15px;
-        margin: 5px 0;
-    }
-
-    .floating-whatsapp .fa-whatsapp {
+    .floating-whatsapp a {
         width: 50px;
         height: 50px;
         font-size: 24px;
