@@ -18,3 +18,22 @@
 /* A navegação recolhe antes de comprometer a leitura no tablet. */
 @media(min-width:701px) and (max-width:900px){.menu-toggle{width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:none;border:1px solid #d6c7df;border-radius:6px;color:var(--purple);cursor:pointer}.menu-toggle span{display:block;width:19px;height:1px;background:currentColor;transition:transform .2s}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}nav{display:none;position:absolute;top:91px;left:0;right:0;padding:18px 36px 25px;background:var(--paper);box-shadow:0 18px 28px #49325c16;border-top:1px solid #e8e1eb;align-items:stretch;gap:2px}nav.is-open{display:flex;flex-direction:column}nav>a:not(.button){font-size:14px;min-height:50px}nav .button-small{font-size:13px;min-height:48px;margin-top:12px;align-self:start;padding-inline:20px}}
 a,button,summary{scroll-margin-block:110px}
+
+/* As páginas se sobrepõem na própria rolagem, sem prender o gesto de toque. */
+@media (max-width:700px) and (prefers-reduced-motion:no-preference){
+  .service-grid[data-stacked]{
+    align-items:start;
+    isolation:isolate;
+    gap:32px;
+  }
+  .service-grid[data-stacked]::after{content:'';height:120px;pointer-events:none}
+  .service-grid[data-stacked] .service-area{
+    position:sticky;
+    top:calc(var(--stack-top) + var(--card-order) * var(--stack-step));
+    z-index:calc(var(--card-order) + 1);
+    box-shadow:0 -6px 20px #34263e12;
+  }
+  .service-grid[data-stacked] .service-area:nth-child(1){--card-order:0}
+  .service-grid[data-stacked] .service-area:nth-child(2){--card-order:1}
+  .service-grid[data-stacked] .service-area:nth-child(3){--card-order:2}
+}

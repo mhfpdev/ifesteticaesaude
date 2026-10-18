@@ -66,7 +66,7 @@ Superfícies predominantemente planas. Sombra suave apenas no pequeno selo fotog
 Botões de 7px; painéis e fotografias de 14px. Arco superior na fotografia principal; contorno fino deslocado, sem recorte do corpo da modelo. Ícones SVG com traço consistente.
 
 ## Components
-Botões violeta com texto branco, variante clara na área de contato. Links de serviço montam uma mensagem de WhatsApp com o nome do atendimento. Menu com botão nativo, estado expandido e fechamento por Escape. Perguntas frequentes usam details/summary nativos. Contato móvel persistente com área própria e margem de rolagem para foco.
+Botões violeta com texto branco, variante clara na área de contato. Links de serviço montam uma mensagem de WhatsApp com o nome do atendimento. Menu com botão nativo, estado expandido e fechamento por Escape. Perguntas frequentes usam details/summary nativos. Contato móvel persistente com área própria e margem de rolagem para foco. Na seção de serviços, cards se empilham com position:sticky até 700px quando há altura para leitura; categorias anteriores ficam em faixas de até 4px. Ao voltar a rolagem, a ordem se desfaz naturalmente. Movimento reduzido, telas baixas ou foco por teclado mantêm os cards em lista.
 Foco visível com contorno de 3px. Transições de cor e deslocamento de 200ms; prefers-reduced-motion remove transições e rolagem suave.
 
 ## Do's and Don'ts
