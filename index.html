@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f2">
+  <meta name="theme-color" content="#e4d6ed">
   <title>Iara Fonseca Paiva · Estética & Saúde</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -29,21 +29,34 @@
   </header>
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <picture class="hero-picture">
-        <source media="(max-width: 720px)" srcset="assets/hero-mobile.webp">
-        <img src="assets/hero.webp" width="1536" height="1024" fetchpriority="high" alt="Imagem ilustrativa de uma mulher com os olhos fechados em um momento de cuidado pessoal.">
-      </picture>
-      <div class="hero-copy" data-hero-copy>
-        <h1 id="hero-title"><span class="hero-line"><span>Estética com</span></span><span class="hero-line"><span>olhar de <em>cuidado.</em></span></span></h1>
-        <p>Estética facial, corporal e cuidados de enfermagem com Iara Fonseca Paiva, em Ibitinga.</p>
+      <div class="hero-copy">
+        <h1 id="hero-title"><span class="hero-line"><span>Seu tempo.</span></span><span class="hero-line"><span>Seu <em>cuidado.</em></span></span></h1>
+        <p>Estética facial, corporal e cuidados de enfermagem. Com Iara Fonseca Paiva, em Ibitinga.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#agendar">Reservar um tempo para mim <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
-          <a class="text-link" href="#cuidados">Conhecer os cuidados <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="#agendar">Conversar com Iara <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+          <a class="text-link" href="#cuidados">Explorar os cuidados <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></a>
         </div>
-        <div class="hero-location"><span class="location-dot" aria-hidden="true"></span>Ibitinga, São Paulo <span class="hero-location-rule" aria-hidden="true"></span>Enfermeira desde 1996</div>
+        <div class="hero-location"><span class="location-dot" aria-hidden="true"></span>Enfermeira desde 1996<span class="hero-location-rule" aria-hidden="true"></span>Ibitinga, SP</div>
       </div>
-      <span class="image-caption hero-caption">Imagem ilustrativa</span>
-      <a class="hero-scroll" href="#cuidados" aria-label="Rolar para os cuidados"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></a>
+      <div class="hero-art">
+        <svg class="bloom" viewBox="0 0 240 240" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width=".8"><path d="M120 120C65 80 73 8 120 8C167 8 175 80 120 120Z" transform="rotate(0 120 120)"/><path d="M120 120C65 80 73 8 120 8C167 8 175 80 120 120Z" transform="rotate(60 120 120)"/><path d="M120 120C65 80 73 8 120 8C167 8 175 80 120 120Z" transform="rotate(120 120 120)"/><path d="M120 120C65 80 73 8 120 8C167 8 175 80 120 120Z" transform="rotate(180 120 120)"/><path d="M120 120C65 80 73 8 120 8C167 8 175 80 120 120Z" transform="rotate(240 120 120)"/><path d="M120 120C65 80 73 8 120 8C167 8 175 80 120 120Z" transform="rotate(300 120 120)"/><circle cx="120" cy="120" r="9"/></g></svg>
+        <div class="portrait-frame">
+          <picture class="hero-picture">
+            <source media="(max-width: 720px)" srcset="assets/hero-mobile.webp">
+            <img src="assets/hero.webp" width="1536" height="1024" fetchpriority="high" alt="Imagem ilustrativa de uma mulher em um momento de cuidado pessoal.">
+          </picture>
+          <span class="image-caption hero-caption">Imagem ilustrativa</span>
+        </div>
+        <div class="care-preview" aria-label="Conheça as áreas de atendimento">
+          <div class="preview-selectors" role="group" aria-label="Áreas de atendimento" hidden>
+            <button type="button" data-preview="0" aria-pressed="true">Rosto</button>
+            <button type="button" data-preview="1" aria-pressed="false">Corpo</button>
+            <button type="button" data-preview="2" aria-pressed="false">Enfermagem</button>
+          </div>
+          <div class="preview-content"><div><h2 id="preview-title">Estética facial</h2><p id="preview-description">Limpeza de pele e máscara facial.</p></div><a id="preview-link" href="#cuidados" aria-label="Conhecer os cuidados de estética facial"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><a class="hero-scroll" href="#cuidados">Encontre o seu cuidado<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></a><button class="motion-toggle" type="button" aria-pressed="false" hidden><svg aria-hidden="true" viewBox="0 0 24 24"><path class="pause-mark" d="M9 6v12m6-12v12"/><path class="play-mark" d="m9 5 10 7-10 7Z"/></svg><span>Pausar animações</span></button></div>
     </section>
 
     <section class="introduction section-shell" aria-labelledby="intro-title">
@@ -84,7 +97,7 @@
     </section>
 
     <section class="visit-section section-shell" id="atendimento" aria-labelledby="visit-title">
-      <div class="section-heading"><h2 id="visit-title">Um primeiro contato.<br><em>O cuidado vem depois.</em></h2><p>Você conversa com Iara antes de agendar.<br>O horário é confirmado diretamente por ela.</p></div>
+      <div class="section-heading"><h2 id="visit-title">Do primeiro contato<br><em>ao seu atendimento.</em></h2><p>Você conversa com Iara antes de agendar.<br>O horário é confirmado diretamente por ela.</p></div>
       <div class="visit-steps"><article><span class="step-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 7h18v14H14l-7 5V7Z"/><path d="M12 12h8m-8 5h5"/></svg></span><h3>Conte o que procura</h3><p>Escolha um cuidado ou tire suas dúvidas pelo WhatsApp.</p></article><article><span class="step-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="6" y="8" width="20" height="18" rx="2"/><path d="M11 5v6m10-6v6M6 15h20m-15 5h4"/></svg></span><h3>Combine seu horário</h3><p>Consulte os valores e encontre um horário com Iara.</p></article><article><span class="step-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m6 15 10-9 10 9M9 13v13h14V13m-10 13v-8h6v8"/></svg></span><h3>Atendimento em Ibitinga</h3><p>Precisa de atendimento domiciliar? Consulte a possibilidade no agendamento.</p></article></div>
       <div class="biosafety"><p>Também procura orientação para o seu negócio?</p><div><h3>Consultoria em biossegurança</h3><a class="text-link" href="https://wa.me/5514976046050?text=Olá%2C%20Iara!%20Gostaria%20de%20informações%20sobre%20consultoria%20em%20biossegurança." target="_blank" rel="noopener noreferrer">Conversar sobre consultoria <span aria-hidden="true">↗</span></a></div></div>
     </section>

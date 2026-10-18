@@ -16,7 +16,9 @@ Abra `http://127.0.0.1:8002/`. Não é necessário instalar dependências para e
 - Contato pelo WhatsApp +55 14 97604-6050, e-mail e Instagram confirmado.
 - O formulário prepara uma mensagem no navegador; a pessoa revisa e envia no WhatsApp. Não confirma horários nem salva dados em servidor.
 - Localização pública limitada a Ibitinga/SP, conforme solicitado.
-- Animações curtas de entrada e feedback, sem vídeo, parallax, rolagem controlada ou efeitos avançados de scroll. Respeita `prefers-reduced-motion`.
+- Hero editorial com revelação da fotografia, entrada do título, movimento ambiente da foto e flor vetorial. Apresentação das três áreas com seleção manual ou troca a cada 6,5 segundos.
+- Botão de pausa interrompe o movimento ambiente e a apresentação automática. Trocas param enquanto a apresentação está em foco ou sob o ponteiro; a cena inteira pausa fora da tela e quando a aba fica oculta. `prefers-reduced-motion` remove movimento e reprodução automática.
+- Serviços expansíveis com transição de abertura e fechamento por toque/clique; teclado conserva a resposta imediata nativa. Sem vídeo ou dependências de animação.
 - Fontes locais do Google Fonts, com licenças SIL OFL incluídas em `assets/fonts/`.
 - Fotografias geradas por IA, visivelmente identificadas como ilustrativas; não representam Iara, clientes ou o espaço real. Os arquivos de proveniência acompanham os ativos.
 - Esta versão de demonstração contém `noindex, nofollow`. Planejar indexação separadamente quando os dados e a publicação forem aprovados.
