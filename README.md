@@ -1,32 +1,24 @@
-# Iara Fonseca Paiva — Estética & Saúde
+# Iara Fonseca Paiva — Estética e Saúde
 
-Site estático em português, com HTML, CSS e JavaScript. Os oito serviços, dados de contato, formação e horários foram informados pelo responsável pelo projeto.
+Site estático em português, com HTML, CSS e JavaScript. Não requer instalação de pacotes ou compilação.
 
-## Executar
+## Abrir
+Na pasta do projeto, execute:
 
-```sh
-python3 -m http.server 8002 --bind 127.0.0.1
+```bash
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Abra `http://127.0.0.1:8002/`. Não é necessário instalar dependências para executar o site.
+Abra http://127.0.0.1:4173 no mesmo computador. Também é possível abrir `index.html` diretamente no navegador.
 
-## Comportamento
+## Editar
+- `index.html`: textos, serviços, horários e links.
+- `style.css`: identidade e comportamento responsivo.
+- `script.js`: menu, mensagens específicas de WhatsApp e ano do rodapé.
+- `assets/`: imagens, fontes e licenças locais.
+- `ASSETS.md`: origens das fotografias e fontes.
+- `QA.md`: evidências e limites da verificação.
 
-- Serviços organizados por categoria, com detalhes expansíveis.
-- Contato pelo WhatsApp +55 14 97604-6050, e-mail e Instagram confirmado.
-- O formulário prepara uma mensagem no navegador; a pessoa revisa e envia no WhatsApp. Não confirma horários nem salva dados em servidor.
-- Localização pública limitada a Ibitinga/SP, conforme solicitado.
-- Hero editorial com revelação da fotografia, entrada do título, movimento ambiente da foto e flor vetorial. Apresentação das três áreas com seleção manual ou troca a cada 6,5 segundos.
-- Botão de pausa interrompe o movimento ambiente e a apresentação automática. Trocas param enquanto a apresentação está em foco ou sob o ponteiro; a cena inteira pausa fora da tela e quando a aba fica oculta. `prefers-reduced-motion` remove movimento e reprodução automática.
-- Serviços expansíveis com transição de abertura e fechamento por toque/clique; teclado conserva a resposta imediata nativa. Sem vídeo ou dependências de animação.
-- Fontes locais do Google Fonts, com licenças SIL OFL incluídas em `assets/fonts/`.
-- Fotografias geradas por IA, visivelmente identificadas como ilustrativas; não representam Iara, clientes ou o espaço real. Os arquivos de proveniência acompanham os ativos.
-- Esta versão de demonstração contém `noindex, nofollow`. Planejar indexação separadamente quando os dados e a publicação forem aprovados.
+Todos os links de agendamento usam 5514976046050. Preços e horários específicos são combinados diretamente. Não existe banco de dados ou formulário que armazene informações dos visitantes. O site funciona com conteúdo visível sem JavaScript; as mensagens personalizadas e o menu recolhido usam JavaScript.
 
-## Publicação independente
-
-Na cópia do repositório `mhfpdev/ifesteticaesaude`, `index.html` e os ativos ficam na raiz. O `netlify.toml` dessa cópia publica a raiz, sem etapa de compilação. No repositório de múltiplos clientes, use `SITE_SLUG=iarafonsecapaiva` com o build existente.
-
-## Revisão
-
-Conferido em navegador nas larguras de 1440, 768 e 390 px. Verificados menu, filtros, detalhes de serviços, foco visível, aviso de privacidade e montagem da mensagem sem envio. Medições de arquivos não equivalem a Lighthouse ou dados reais de Core Web Vitals.
+Arquivos estáticos prontos para hospedagem. Este repositório não contém uma configuração de publicação ou domínio. As fotografias são ilustrativas e podem ser substituídas por fotos reais autorizadas.

@@ -1,2 +1,6 @@
-__pycache__/
 .DS_Store
+Thumbs.db
+.impeccable/
+node_modules/
+.env
+.env.*
