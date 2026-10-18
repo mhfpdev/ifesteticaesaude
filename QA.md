@@ -36,3 +36,6 @@ A pedido do usuário, deslocamento máximo reduzido de 64px para 16px por card. 
 
 ### Ajuste aprovado para o GitHub
 Separação final de 4px entre as camadas, conforme solicitação do usuário. Verificado em 390×844: cards nas posições 100/104/108px, sem excesso horizontal. Captura final vista. JavaScript e diff verificados. Usuário autorizou o envio da animação e deste ajuste ao GitHub.
+
+### Símbolo do WhatsApp
+Desenho autoral substituído pelo símbolo da biblioteca Bootstrap Icons, com preenchimento currentColor e sem contorno adicional. Os três usos compartilham a mesma definição. Captura móvel 390×844 vista, incluindo o botão do hero e o contato persistente. Destinos de agendamento preservados. Licença MIT incluída nos recursos.

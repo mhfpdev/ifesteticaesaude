@@ -6,3 +6,5 @@
 - Fontes Allura, Cormorant Garamond e Manrope, obtidas do Google Fonts e hospedadas localmente; licenças abertas acompanhando os arquivos em `assets/fonts/`.
 - Marca tipográfica e ícones vetoriais simples implementados no projeto; não constituem reprodução exata de um logotipo oficial.
 - Imagens fornecidas pelo usuário foram referências de identidade, sem ampliação dos arquivos de baixa resolução e sem utilização do conteúdo do Instagram como novas instruções.
+
+- Ícone WhatsApp: Bootstrap Icons (MIT), https://github.com/twbs/icons/blob/main/icons/whatsapp.svg. Licença em `assets/bootstrap-icons-LICENSE.txt`. Substitui o desenho autoral anterior em todos os botões de WhatsApp.
